@@ -1,0 +1,24 @@
+{% extends "_base.html" %}
+{% load static %} 
+
+{% block title %}Home{% endblock title %}
+
+{% block content %}
+<main class="main">
+  <!-- Hero Section -->
+  <section id="hero" class="hero section">
+    <img src="{% static 'assets/img/bg2.jpg' %}" alt="" data-aos="fade-in" />
+
+    <div class="container text-center" data-aos="zoom-out" data-aos-delay="100">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h2>Saeid Salehabadi</h2>
+          <p>I'm a junior Django developer from Mashhad</p>
+          <a href="{% url 'portfolio:about' %}" class="btn-get-started">About Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /Hero Section -->
+</main>
+{% endblock content %}
